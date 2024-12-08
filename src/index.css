@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-@import 'slick-carousel/slick/slick.css';
-@import 'slick-carousel/slick/slick-theme.css';
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap");
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 
 @tailwind base;
 @tailwind components;
@@ -14,17 +14,17 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  font-family: 'Inter', sans-serif;
+  font-family: "Changa", sans-serif;
 }
 
 .slick-dots li button:before {
-  color: #D4AF37 !important;
+  color: #d4af37 !important;
   opacity: 0.25;
   font-size: 12px;
 }
 
 .slick-dots li.slick-active button:before {
-  color: #D4AF37 !important;
+  color: #d4af37 !important;
   opacity: 1;
 }
 
@@ -38,7 +38,7 @@ body {
 
 .slick-prev:before,
 .slick-next:before {
-  color: #D4AF37 !important;
+  color: #d4af37 !important;
 }
 
 .slick-prev {
@@ -56,9 +56,21 @@ body {
     @apply px-4 mx-auto;
     max-width: 1280px;
   }
-  
+
   .btn-gold {
     @apply bg-gold text-black px-8 py-4 rounded-lg text-lg font-bold 
            transition-transform duration-300 hover:scale-105 active:scale-95;
   }
+}
+
+.bg {
+  background-image: url(/public/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  mix-blend-mode: screen;
+}
+.bg1 {
+  background-image: url(/public/5.jpg);
+  background-position: center;
+  background-size: cover;
 }

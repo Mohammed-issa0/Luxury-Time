@@ -1,35 +1,33 @@
-import { motion, AnimatePresence } from 'framer-motion';
-import { useState } from 'react';
+import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
 
 const faqs = [
   {
     question: "كيف أضمن جودة المنتج؟",
-    answer: "كل ساعة تأتي مع شهادة ضمان أصالة وجودة معتمدة."
+    answer: "كل ساعة تأتي مع شهادة ضمان أصالة وجودة معتمدة.",
   },
   {
     question: "هل يمكنني استبدالها أو إرجاعها؟",
-    answer: "نعم، نوفر ضمان استبدال أو إرجاع خلال 30 يومًا من تاريخ الشراء."
+    answer: "نعم، نوفر ضمان استبدال أو إرجاع خلال 30 يومًا من تاريخ الشراء.",
   },
   {
     question: "هل تناسب الساعة الاستخدام اليومي؟",
-    answer: "بالتأكيد، تم تصميمها لتتحمل الظروف اليومية، مع الحفاظ على أناقتها."
+    answer:
+      "بالتأكيد، تم تصميمها لتتحمل الظروف اليومية، مع الحفاظ على أناقتها.",
   },
   {
     question: "هل تأتي مع ضمان؟",
-    answer: "نعم، الساعة مشمولة بضمان لمدة عامين على جميع العيوب المصنعية."
-  }
+    answer: "نعم، الساعة مشمولة بضمان لمدة عامين على جميع العيوب المصنعية.",
+  },
 ];
 
 function FAQItem({ question, answer }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <motion.div
-      className="border-b border-gray-200 py-4"
-      initial={false}
-    >
+    <motion.div className="border-b border-gray-200 py-4" initial={false}>
       <button
-        className="w-full text-right flex justify-between items-center"
+        className="w-full text-right flex flex-row-reverse justify-between items-center"
         onClick={() => setIsOpen(!isOpen)}
       >
         <motion.span
@@ -61,7 +59,9 @@ export default function FAQ() {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-16">الأسئلة الشائعة</h2>
+        <h2 className="text-4xl font-bold text-center mb-16">
+          الأسئلة الشائعة
+        </h2>
         <div className="max-w-3xl mx-auto">
           {faqs.map((faq, index) => (
             <FAQItem key={index} {...faq} />
