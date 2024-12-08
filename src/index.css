@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  direction: rtl;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+.slick-dots li button:before {
+  color: #D4AF37 !important;
+  opacity: 0.25;
+  font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #D4AF37 !important;
+  opacity: 1;
+}
+
+.slick-dots li {
+  margin: 0 6px;
+}
+
+.slick-dots {
+  bottom: -40px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #D4AF37 !important;
+}
+
+.slick-prev {
+  right: -25px;
+  left: auto;
+}
+
+.slick-next {
+  left: -25px;
+  right: auto;
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto;
+    max-width: 1280px;
+  }
+  
+  .btn-gold {
+    @apply bg-gold text-black px-8 py-4 rounded-lg text-lg font-bold 
+           transition-transform duration-300 hover:scale-105 active:scale-95;
+  }
+}
