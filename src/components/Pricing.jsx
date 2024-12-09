@@ -15,9 +15,9 @@ export default function Pricing() {
           >
             250 ريال فقط!
           </motion.div>
-          <p className="text-green-600 mb-8">وفر 50% لفترة محدودة!</p>
+          <p className="text-black mb-8">وفر 50% لفترة محدودة!</p>
           <Cta />
-          <p className="mt-4 text-red-600">متبقي 7 قطع فقط من أصل 50!</p>
+          <p className="mt-4 text-gold">متبقي 7 قطع فقط من أصل 50!</p>
         </div>
       </div>
     </section>

@@ -17,10 +17,10 @@ export default function CallToAction() {
             بسعر العرض الخاص.
           </p>
           <div className="bg-white p-6 rounded-lg shadow-lg mb-8">
-            <p className="text-red-600 font-bold text-2xl mb-4">
+            <p className="text-gold font-bold text-2xl mb-4">
               تبقى أقل من 10 قطع فقط!
             </p>
-            <p className="text-green-600">اطلب الآن واستمتع بالشحن المجاني!</p>
+            <p className="text-black">اطلب الآن واستمتع بالشحن المجاني!</p>
           </div>
           <Cta />
           <p className="mt-8 text-gray-600 italic">

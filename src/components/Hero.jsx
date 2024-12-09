@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Cta from "./Cta";
-import logo from "../../public/2-2.png";
+import logo from "../../public/3.png";
 export default function Hero() {
   return (
     <div className="relative  min-h-screen bg-gradient-to-r from-green-950 to-green-900 text-white flex items-center">
